@@ -1,3 +1,4 @@
+#!/bin/sh
 PROJECT_NAME=project-template
 START_DELAY=10s
 cd ~/projects/${PROJECT_NAME}/
