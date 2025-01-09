@@ -8,8 +8,9 @@ tmux new-window   -t ${PROJECT_NAME}:2 -n web-log    "sleep ${START_DELAY}; make
 tmux new-window   -t ${PROJECT_NAME}:3 -n back       "sleep ${START_DELAY}; make sh s=back-main  u=app"
 tmux new-window   -t ${PROJECT_NAME}:4 -n back-log   "sleep ${START_DELAY}; make log s=back-main"
 tmux new-window   -t ${PROJECT_NAME}:5 -n worker-log "sleep ${START_DELAY}; docker compose logs -f back-main-worker"
-# back to first window
-tmux select-window -t ${PROJECT_NAME}:0
-# attach to the session
-tmux -2 attach-session -t ${PROJECT_NAME}
 
+# Don't do that, I'm going to use one tmux instance and will switch between sessions
+# back to first window
+# tmux select-window -t ${PROJECT_NAME}:0
+# attach to the session
+# tmux -2 attach-session -t ${PROJECT_NAME}
