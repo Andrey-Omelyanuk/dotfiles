@@ -1,4 +1,11 @@
 
+help:
+	@echo "install"
+	@echo "update"
+	@echo "pmin"
+	@echo "pmax"
+	@echo "pshow"
+
 install:
 	sudo apt install vim tmux
 	sudo snap install nvim --classic
@@ -25,7 +32,7 @@ update:
 	cp -r ./nvim ~/.config/
 
 	# -- Main workbenche ----------------------------------
-	yes | cp -rf ./workbenches/up.sh ~/up.sh
+	yes | cp -rf ./up.sh ~/up.sh
 
 
 pmin:

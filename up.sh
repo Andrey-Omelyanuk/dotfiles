@@ -1,2 +1,4 @@
-bash ~/projects/infra/workbenche.sh
-bash ~/projects/dotfiles/workbenche.sh
+bash ~/projects/infra/workbench.sh
+bash ~/projects/dotfiles/workbench.sh
+bash ~/projects/dev-cluster/workbench.sh
+
