@@ -1,10 +1,29 @@
 
+install:
+	sudo apt install vim tmux
+	sudo snap install nvim --classic
+	sudo snap install ghostty --classic
+
 update:
-	# update nvim
-	rm -R ~/.config/nvim
+	# -- Bash ----------------------------------------------
+	rm -f ~/.bashrc
+	cp ./bash/.bashrc ~/.bashrc
+
+	# -- Ghostty -------------------------------------------
+	rm -f ~/.config/ghostty/config
+	cp ./ghostty/config ~/.config/ghostty/config
+
+	# -- Tmux ----------------------------------------------
+	rm -f ~/.tmux.conf
+	cp ./tmux/.tmux.conf ~/.tmux.conf
+
+	# -- Vim -----------------------------------------------
+	rm -f ~/.vimrc
+	cp ./vim/.vimrc ~/.vimrc
+
+	# -- NeoVim --------------------------------------------
+	rm -Rf ~/.config/nvim
 	cp -r ./nvim ~/.config/
-	# copy only files from workbenches to home directory
-	cp -r ./workbenches/* ~/
 
 
 pmin:
