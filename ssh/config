@@ -3,9 +3,3 @@ Host github-intelas
    HostName github.com
    IdentityFile ~/.ssh/intelas_id_rsa
    IdentitiesOnly yes
-
-Host gitea.propagandon.online 
-  Port 2222
-
-Host repo.edtechworld.pl
-  Port 2222
