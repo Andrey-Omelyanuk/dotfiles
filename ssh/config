@@ -1,0 +1,17 @@
+# Default github account
+Host github.com
+   HostName github.com
+   IdentityFile ~/.ssh/id_rsa
+   IdentitiesOnly yes
+   
+# Intelas github account
+Host github-intelas
+   HostName github.com
+   IdentityFile ~/.ssh/intelas_id_rsa
+   IdentitiesOnly yes
+
+Host gitea.propagandon.online 
+  Port 2222
+
+Host repo.edtechworld.pl
+  Port 2222

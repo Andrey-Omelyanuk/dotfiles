@@ -5,25 +5,27 @@ install:
 	sudo snap install ghostty --classic
 
 update:
+	# -- SSH -----------------------------------------------
+	yes | cp -rf ./ssh/config ~/.ssh/config
+
 	# -- Bash ----------------------------------------------
-	rm -f ~/.bashrc
-	cp ./bash/.bashrc ~/.bashrc
+	yes | cp -rf ./bash/.bashrc ~/.bashrc
 
 	# -- Ghostty -------------------------------------------
-	rm -f ~/.config/ghostty/config
-	cp ./ghostty/config ~/.config/ghostty/config
+	yes | cp -rf ./ghostty/config ~/.config/ghostty/config
 
 	# -- Tmux ----------------------------------------------
-	rm -f ~/.tmux.conf
-	cp ./tmux/.tmux.conf ~/.tmux.conf
+	yes | cp -rf ./tmux/.tmux.conf ~/.tmux.conf
 
 	# -- Vim -----------------------------------------------
-	rm -f ~/.vimrc
-	cp ./vim/.vimrc ~/.vimrc
+	yes | cp -rf ./vim/.vimrc ~/.vimrc
 
 	# -- NeoVim --------------------------------------------
 	rm -Rf ~/.config/nvim
 	cp -r ./nvim ~/.config/
+
+	# -- Main workbenche ----------------------------------
+	yes | cp -rf ./workbenches/up.sh ~/up.sh
 
 
 pmin:
