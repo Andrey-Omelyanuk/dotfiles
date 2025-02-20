@@ -1,9 +1,3 @@
-# Default github account
-Host github.com
-   HostName github.com
-   IdentityFile ~/.ssh/id_rsa
-   IdentitiesOnly yes
-   
 # Intelas github account
 Host github-intelas
    HostName github.com
