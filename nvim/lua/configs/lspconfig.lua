@@ -6,7 +6,7 @@ local lspconfig = require "lspconfig"
 -- EXAMPLE
 local servers = {
   "html", "cssls", "ts_ls", "tailwindcss",
-  "pyright", "djlsp", "golsp", "rust_analyzer",
+  "pyright", "djlsp", "rust_analyzer",
   "dockerls", "docker_compose_language_service", "bashls"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
