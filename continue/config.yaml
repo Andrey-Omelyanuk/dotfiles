@@ -1,0 +1,50 @@
+name: local-assistant
+version: 0.0.1
+schema: v1
+models: 
+  - name    : DeepSeek-R1:14b
+    model   : deepseek-r1:14b
+    provider: ollama
+    roles   :
+      - chat 
+      - edit
+  # - name    : Qwen2.5-Coder:14b
+  #   model   : qwen2.5-coder:14b
+  #   provider: ollama
+  #   roles   :
+  #     - chat 
+  #     - edit
+  # - name    : Qwen2.5-Coder:3b
+  #   model   : qwen2.5-coder:3b
+  #   provider: ollama
+  #   roles   :
+  #     - autocomplete
+
+prompts:
+
+  - name: bug in terminal 
+    description: Fix the error message in terminal
+    prompt: |
+      Do @terminal have an error? 
+  - name: pytest
+    description: Unit test a function  
+    prompt: |
+      Write  
+  - name: jest 
+    description: Unit test a function
+    prompt: |
+      Please write a complete suite of unit tests
+  - name: storybook
+    description: Unit test a function
+    prompt: |
+      Please write a complete suite of unit tests
+
+context:
+  - provider: code
+  - provider: docs
+  - provider: diff
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+  - provider: codebase
+  - provider: file
