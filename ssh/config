@@ -1,5 +1,0 @@
-# Intelas github account
-Host github-intelas
-   HostName github.com
-   IdentityFile ~/.ssh/intelas_id_rsa
-   IdentitiesOnly yes
