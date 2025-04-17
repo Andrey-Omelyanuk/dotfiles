@@ -1,10 +1,10 @@
 
 help:
-	@echo "install"
-	@echo "update"
-	@echo "pmin"
-	@echo "pmax"
-	@echo "pshow"
+	@echo "install   : install all the tools"
+	@echo "update    : update configuration files"
+	@echo "pmin      : apply save mode for CPU"
+	@echo "pmax      : apply performance mode for CPU" 
+	@echo "pshow     : show power management status"
 
 install:
 	sudo apt install vim tmux
@@ -19,9 +19,7 @@ update:
 	yes | cp -rf ./vim/.vimrc           ~/.vimrc
 	yes | cp -rf ./up.sh                ~/up.sh
 	yes | cp -rf ./continue/config.yaml ~/.continue/config.yaml
-
-	rm -Rf ~/.config/nvim
-	cp -r ./nvim ~/.config/
+	rm -Rf ~/.config/nvim && cp -r ./nvim ~/.config/
 
 pmin:
 	bash ./power-management/min.sh
