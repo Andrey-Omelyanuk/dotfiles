@@ -18,8 +18,8 @@ update:
 	yes | cp -rf ./tmux/.tmux.conf      ~/.tmux.conf
 	yes | cp -rf ./vim/.vimrc           ~/.vimrc
 	yes | cp -rf ./up.sh                ~/up.sh
-	yes | cp -rf ./continue/config.yaml ~/.continue/config.yaml
 	rm -Rf ~/.config/nvim && cp -r ./nvim ~/.config/
+#	yes | cp -rf ./continue/config.yaml ~/.continue/config.yaml
 
 pmin:
 	bash ./power-management/min.sh
