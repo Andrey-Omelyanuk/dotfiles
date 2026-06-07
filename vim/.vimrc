@@ -13,9 +13,9 @@ endif
 call plug#begin('~/.vim/plugged')
 " base
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "
+Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}

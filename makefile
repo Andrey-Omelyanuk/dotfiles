@@ -12,7 +12,7 @@ install:
 	sudo snap install ghostty --classic
 
 update:
-	yes | cp -rf ./ssh/config           ~/.ssh/config
+#	yes | cp -rf ./ssh/config           ~/.ssh/config
 	yes | cp -rf ./bash/.bashrc         ~/.bashrc
 	yes | cp -rf ./ghostty/config       ~/.config/ghostty/config
 	yes | cp -rf ./tmux/.tmux.conf      ~/.tmux.conf
